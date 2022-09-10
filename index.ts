@@ -1,4 +1,4 @@
-class auto {
+class Auto {
     public modelo : string;
     public marca : string;
     public dominio : string;
@@ -19,7 +19,7 @@ class auto {
 
     }
 
-
+    
     encenderApagar (): void {
         if (this.estaPrendido===true){
             this.estaPrendido=false;
@@ -41,3 +41,8 @@ class auto {
         this.direccionActual = "Izquierda";
     }
 }
+
+let autoUno = new Auto ("Renault","Sandero","AB867TL","Gris Plata",false,0,"recto");
+let autoDos = new Auto ("Volkswagen","Gol","AF853PL","Azul",true,120,"derecha");
+
+console.log(autoDos)
