@@ -1,7 +1,7 @@
 var Auto = /** @class */ (function () {
-    function Auto(pModelo, pMarca, pDominio, pColorActual, pEncendido, pVelocidad, pDireccion) {
-        this.modelo = pModelo;
+    function Auto(pMarca, pModelo, pDominio, pColorActual, pEncendido, pVelocidad, pDireccion) {
         this.marca = pMarca;
+        this.modelo = pModelo;
         this.dominio = pDominio;
         this.colorActual = pColorActual;
         this.estaPrendido = pEncendido;
@@ -32,4 +32,4 @@ var Auto = /** @class */ (function () {
 }());
 var autoUno = new Auto("Renault", "Sandero", "AB867TL", "Gris Plata", false, 0, "recto");
 var autoDos = new Auto("Volkswagen", "Gol", "AF853PL", "Azul", true, 120, "derecha");
-console.log(autoDos);
+console.log("El Auto ".concat(autoDos.marca, " - ").concat(autoDos.modelo, ", tiene como dominio: ").concat(autoDos.dominio));

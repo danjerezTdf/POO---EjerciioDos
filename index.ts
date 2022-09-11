@@ -8,9 +8,9 @@ class Auto {
     public direccionActual : string;
 
 
-    constructor (pModelo:string,pMarca:string,pDominio:string,pColorActual:string,pEncendido:boolean,pVelocidad:number,pDireccion:string) {
-        this.modelo = pModelo;
+    constructor (pMarca:string,pModelo:string,pDominio:string,pColorActual:string,pEncendido:boolean,pVelocidad:number,pDireccion:string) {
         this.marca = pMarca;
+        this.modelo = pModelo;
         this.dominio = pDominio;
         this.colorActual = pColorActual;
         this.estaPrendido = pEncendido;
@@ -45,4 +45,4 @@ class Auto {
 let autoUno = new Auto ("Renault","Sandero","AB867TL","Gris Plata",false,0,"recto");
 let autoDos = new Auto ("Volkswagen","Gol","AF853PL","Azul",true,120,"derecha");
 
-console.log(autoDos)
+console.log(`El Auto ${autoDos.marca} - ${autoDos.modelo}, tiene como dominio: ${autoDos.dominio}`)
